@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumina Finishers | Architectural Painting & Fine Surface Coatings</title>
+  <meta name="description" content="Factory-smooth cabinet lacquering, museum-grade interior finishing, and heritage exterior architectural painting with our 5-Stage Zero-Dust HEPA guarantee.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            sans: ['"Outfit"', 'sans-serif'],
+          },
+          colors: {
+            obsidian: {
+              900: '#0b1120',
+              950: '#050811',
+            },
+            linen: '#FBF9F5',
+            champagne: {
+              500: '#d97706',
+              600: '#b45309',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <style>
+    input[type=range]::-webkit-slider-thumb {
+      appearance: none;
+      height: 22px;
+      width: 22px;
+      border-radius: 50%;
+      background: #0b1120;
+      border: 2px solid #f59e0b;
+      cursor: pointer;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body class="bg-[#FBF9F5] text-slate-800 font-sans antialiased selection:bg-slate-900 selection:text-amber-300">
+
+  <!-- ==================== TOP ANNOUNCEMENT BAR ==================== -->
+  <div class="bg-obsidian-950 text-slate-300 text-xs py-2.5 px-4 border-b border-slate-800/80">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2 justify-center">
+        <span class="inline-block w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+        <span>The 5-Stage Zero-Dust Standard: Certified HEPA air scrubbers & 100% Zero-VOC designer paints</span>
+      </div>
+      <div class="flex items-center gap-6 font-medium text-slate-300">
+        <span class="flex items-center gap-1.5"><i data-lucide="shield-check" class="w-3.5 h-3.5 text-amber-400"></i> EPA Lead-Safe Certified</span>
+        <a href="tel:4157993320" class="hover:text-white transition-colors flex items-center gap-1"><i data-lucide="phone" class="w-3.5 h-3.5"></i> (415) 799-3320</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== STICKY NAVIGATION ==================== -->
+  <header class="sticky top-0 z-50 bg-[#FBF9F5]/90 backdrop-blur-md border-b border-slate-200/80 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-slate-950 flex items-center justify-center text-amber-400 shadow-sm group-hover:bg-slate-900 transition-colors">
+          <i data-lucide="paint-roller" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <span class="font-serif text-2xl tracking-wide font-bold text-slate-950 block leading-none">LUMINA FINISHERS</span>
+          <span class="text-[10px] tracking-[0.25em] uppercase text-slate-500 font-semibold mt-1 block">Fine Architectural Coatings</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-700">
+        <a href="#services" class="hover:text-slate-950 transition-colors">Specialties</a>
+        <a href="#visualizer" class="hover:text-slate-950 transition-colors flex items-center gap-1.5">
+          <span class="w-2 h-2 rounded-full bg-amber-500"></span> Swatch Studio
+        </a>
+        <a href="#calculator" class="hover:text-slate-950 transition-colors">Instant Calculator</a>
+        <a href="#zero-dust" class="hover:text-slate-950 transition-colors">Zero-Dust Standard</a>
+        <a href="#portfolio" class="hover:text-slate-950 transition-colors">Portfolios</a>
+        <a href="#faq" class="hover:text-slate-950 transition-colors">FAQ</a>
+      </nav>
+
+      <!-- Desktop CTA -->
+      <div class="hidden lg:flex items-center gap-4">
+        <button onclick="openBookingModal()" class="px-5 py-2.5 rounded-full bg-slate-950 hover:bg-slate-800 text-white text-sm font-medium shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5 flex items-center gap-2">
+          <span>Book Laser Estimate</span>
+          <i data-lucide="arrow-right" class="w-4 h-4 text-amber-400"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Button -->
+      <button id="mobileMenuBtn" aria-label="Toggle menu" class="md:hidden p-2 text-slate-800 focus:outline-none">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-slate-200 px-6 py-5 shadow-xl transition-all">
+      <div class="flex flex-col gap-4 text-base font-medium text-slate-800">
+        <a href="#services" class="mobile-link py-2 border-b border-slate-100">Specialties</a>
+        <a href="#visualizer" class="mobile-link py-2 border-b border-slate-100 text-amber-600 font-semibold flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-amber-500"></span> Swatch Studio & Visualizer
+        </a>
+        <a href="#calculator" class="mobile-link py-2 border-b border-slate-100">Instant Calculator</a>
+        <a href="#zero-dust" class="mobile-link py-2 border-b border-slate-100">Zero-Dust Standard</a>
+        <a href="#portfolio" class="mobile-link py-2 border-b border-slate-100">Portfolios</a>
+        <a href="#faq" class="mobile-link py-2 border-b border-slate-100">FAQ</a>
+        <button onclick="openBookingModal(); toggleMobileMenu();" class="mt-2 w-full py-3 rounded-xl bg-slate-950 text-white font-medium flex items-center justify-center gap-2">
+          <span>Book Laser Estimate</span>
+          <i data-lucide="arrow-right" class="w-4 h-4 text-amber-400"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="relative pt-12 pb-20 lg:pt-20 lg:pb-32 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Left: Copy & Actions -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-50 border border-amber-200 text-amber-900 text-xs font-semibold tracking-wide">
+            <i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-600"></i>
+            <span>Architectural-Grade Interior & Cabinet Lacquering</span>
+          </div>
+
+          <h1 class="font-serif text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-slate-950 leading-[1.08]">
+            Paint with the precision of fine <span class="italic font-normal text-amber-600">cabinetry</span>.
+          </h1>
+
+          <p class="text-lg sm:text-xl text-slate-600 font-light leading-relaxed max-w-2xl">
+            We deliver brush-mark-free spray finishes, zero-dust prep barriers, and museum-grade color curation using Benjamin Moore Aura® and Farrow & Ball for discerning homes.
+          </p>
+
+          <!-- Dual CTAs -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4">
+            <button onclick="openBookingModal()" class="px-8 py-4 rounded-full bg-slate-950 hover:bg-slate-800 text-white font-medium shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-3 text-base">
+              <span>Schedule Free Laser Measure</span>
+              <i data-lucide="arrow-up-right" class="w-5 h-5 text-amber-400"></i>
+            </button>
+            <a href="#calculator" class="px-7 py-4 rounded-full bg-white hover:bg-slate-50 border border-slate-300 text-slate-800 font-medium transition-all flex items-center justify-center gap-2 text-base hover:border-slate-400">
+              <i data-lucide="calculator" class="w-4 h-4 text-amber-600"></i>
+              <span>Instant Cost Estimator</span>
+            </a>
+          </div>
+
+          <!-- Trust Badges Bar -->
+          <div class="pt-8 border-t border-slate-200/80 grid grid-cols-3 gap-6">
+            <div>
+              <div class="text-3xl font-serif font-bold text-slate-950">500+</div>
+              <div class="text-xs text-slate-500 font-medium uppercase tracking-wider mt-1">Homes Completed</div>
+            </div>
+            <div>
+              <div class="text-3xl font-serif font-bold text-slate-950">10-Yr</div>
+              <div class="text-xs text-slate-500 font-medium uppercase tracking-wider mt-1">Anti-Peel Warranty</div>
+            </div>
+            <div>
+              <div class="text-3xl font-serif font-bold text-slate-950">Zero</div>
+              <div class="text-xs text-slate-500 font-medium uppercase tracking-wider mt-1">Dust Migration</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Visual Hero Card -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            <div class="absolute -inset-4 bg-gradient-to-tr from-amber-200/30 via-slate-200/40 to-blue-200/20 rounded-3xl blur-2xl -z-10"></div>
+            
+            <div class="relative bg-white rounded-3xl p-3 shadow-2xl border border-slate-200 overflow-hidden">
+              <div class="relative h-[440px] sm:h-[500px] rounded-2xl overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=80" alt="Architectural Interior Finish" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent"></div>
+                
+                <!-- Floating Card -->
+                <div class="absolute bottom-5 left-5 right-5 p-4 rounded-xl bg-white/95 backdrop-blur-md border border-white/60 shadow-lg">
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <span class="text-xs uppercase tracking-wider text-amber-700 font-bold block">Pacific Heights Residence</span>
+                      <h4 class="font-serif font-bold text-lg text-slate-950">Museum Level 5 Smooth Wall</h4>
+                    </div>
+                    <span class="px-2.5 py-1 rounded-md bg-amber-100 text-amber-900 text-xs font-semibold">Farrow & Ball</span>
+                  </div>
+                  <p class="text-xs text-slate-600 mt-2">Zero-VOC mineral estate emulsion with hand-sanded satin enamel baseboards.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mini Badge -->
+            <div class="absolute -bottom-5 -left-5 bg-white rounded-2xl p-4 shadow-xl border border-slate-100 flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-slate-950 flex items-center justify-center text-amber-400 font-bold">
+                <i data-lucide="check" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <div class="text-xs font-bold text-slate-900">Zero Odor • Zero Dust</div>
+                <div class="text-[11px] text-slate-500">HEPA Air Filtration On-Site</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CERTIFIED PAINT PARTNERS ==================== -->
+  <section class="py-10 bg-white border-y border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="text-center text-xs uppercase tracking-[0.25em] font-semibold text-slate-400 mb-8">
+        Certified Master Applicators For Premier Architectural Formulations
+      </p>
+      <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-75 grayscale hover:grayscale-0 transition-all">
+        <span class="font-serif text-2xl font-bold tracking-wider text-slate-800">Benjamin Moore®</span>
+        <span class="font-serif text-2xl tracking-widest text-slate-900 font-bold">FARROW & BALL</span>
+        <span class="font-sans text-xl tracking-tight font-extrabold text-slate-800">FINE PAINTS OF EUROPE</span>
+        <span class="font-serif text-xl tracking-widest text-slate-700 font-semibold">SHERWIN-WILLIAMS EMERALD®</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CORE SERVICES / BENTO GRID ==================== -->
+  <section id="services" class="py-24 bg-[#FBF9F5]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <span class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-100 text-amber-900 text-xs font-semibold uppercase tracking-wider">
+          Specialized Craftsmanship
+        </span>
+        <h2 class="font-serif text-4xl sm:text-5xl font-bold text-slate-950">
+          Where engineering meets high aesthetic.
+        </h2>
+        <p class="text-slate-600 text-lg font-light">
+          We don't just roll paint over imperfections. We laser-sand, skim-coat to Level 5, prime with moisture-lock sealers, and spray with surgical precision.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Bento 1: Large Featured Card -->
+        <div class="md:col-span-2 bg-white rounded-3xl p-8 sm:p-10 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          <div class="space-y-4">
+            <div class="w-12 h-12 rounded-2xl bg-slate-950 text-amber-400 flex items-center justify-center">
+              <i data-lucide="spray-can" class="w-6 h-6"></i>
+            </div>
+            <div class="inline-block px-3 py-1 rounded-full bg-slate-100 text-slate-800 text-xs font-semibold">Signature Specialization</div>
+            <h3 class="font-serif text-3xl font-bold text-slate-950">Kitchen Cabinet Factory Lacquering</h3>
+            <p class="text-slate-600 leading-relaxed max-w-xl">
+              Transform dated oak or maple cabinets into flawless, glass-smooth Italian-grade lacquer. We dismantle doors to spray in a dustless mobile booth using catalyzed urethane enamel that resists chips, wine spills, and grease.
+            </p>
+          </div>
+          <div class="mt-8 rounded-2xl overflow-hidden h-64 relative">
+            <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1000&q=80" alt="Cabinet Finish" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+            <span class="absolute bottom-4 left-4 text-white text-xs font-medium bg-black/40 backdrop-blur-md px-3 py-1 rounded-full">Saves 70% vs. Cabinet Replacement • 10-Yr Bond Guarantee</span>
+          </div>
+        </div>
+
+        <!-- Bento 2: Level 5 Interior -->
+        <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          <div class="space-y-4">
+            <div class="w-12 h-12 rounded-2xl bg-amber-50 text-amber-700 flex items-center justify-center">
+              <i data-lucide="home" class="w-6 h-6"></i>
+            </div>
+            <div class="inline-block px-3 py-1 rounded-full bg-amber-50 text-amber-900 text-xs font-semibold">Architectural Interiors</div>
+            <h3 class="font-serif text-2xl font-bold text-slate-950">Museum Level 5 Skim & Fine Finishes</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Complete elimination of drywall texture, tape shadows, and roller stipple. Ultra-flat mineral finishes that catch sunlight without flaws.
+            </p>
+          </div>
+          <div class="mt-8 rounded-2xl overflow-hidden h-48 relative">
+            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" alt="Interior Walls" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+          </div>
+        </div>
+
+        <!-- Bento 3: Heritage Exteriors -->
+        <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          <div class="space-y-4">
+            <div class="w-12 h-12 rounded-2xl bg-slate-900 text-slate-200 flex items-center justify-center">
+              <i data-lucide="building" class="w-6 h-6 text-amber-400"></i>
+            </div>
+            <div class="inline-block px-3 py-1 rounded-full bg-slate-100 text-slate-800 text-xs font-semibold">Exterior Architectural</div>
+            <h3 class="font-serif text-2xl font-bold text-slate-950">Heritage & Modernist Facades</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Full rotary scraping down to sound substrate, elastomeric caulk seals, and UV-reflective ceramic coatings built for harsh weather.
+            </p>
+          </div>
+          <div class="mt-8 rounded-2xl overflow-hidden h-48 relative">
+            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" alt="Exterior Paint" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+          </div>
+        </div>
+
+        <!-- Bento 4: Millwork & Trim -->
+        <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          <div class="space-y-4">
+            <div class="w-12 h-12 rounded-2xl bg-amber-900 text-amber-200 flex items-center justify-center">
+              <i data-lucide="box" class="w-6 h-6 text-amber-300"></i>
+            </div>
+            <div class="inline-block px-3 py-1 rounded-full bg-amber-50 text-amber-800 text-xs font-semibold">Fine Millwork</div>
+            <h3 class="font-serif text-2xl font-bold text-slate-950">Lacquered Trim & Wainscoting</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Flawless enamel coatings on coffered ceilings, crown moldings, baseboards, and custom architectural bookcases.
+            </p>
+          </div>
+          <div class="mt-8 rounded-2xl overflow-hidden h-48 relative">
+            <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=800&q=80" alt="Millwork Paint" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+          </div>
+        </div>
+
+        <!-- Bento 5: Venetian Plaster -->
+        <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          <div class="space-y-4">
+            <div class="w-12 h-12 rounded-2xl bg-stone-900 text-stone-200 flex items-center justify-center">
+              <i data-lucide="feather" class="w-6 h-6 text-amber-400"></i>
+            </div>
+            <div class="inline-block px-3 py-1 rounded-full bg-stone-100 text-stone-800 text-xs font-semibold">Artisanal Surfaces</div>
+            <h3 class="font-serif text-2xl font-bold text-slate-950">Italian Venetian Plaster & Limewash</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Authentic slaked lime and Carrara marble dust burnished by hand with Japanese stainless trowels for tactile depth.
+            </p>
+          </div>
+          <div class="mt-8 rounded-2xl overflow-hidden h-48 relative">
+            <img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=800&q=80" alt="Limewash Plaster" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== INTERACTIVE SWATCH STUDIO & VISUALIZER ==================== -->
+  <section id="visualizer" class="py-24 bg-slate-950 text-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <span class="text-xs uppercase tracking-[0.25em] text-amber-400 font-bold">Interactive Color Lab</span>
+        <h2 class="font-serif text-4xl sm:text-5xl font-bold">Test designer shades in real-time.</h2>
+        <p class="text-slate-400 font-light">
+          Click any curated architectural palette below to see how light temperature, undertone, and sheen reflect in a living space.
+        </p>
+      </div>
+
+      <div class="max-w-5xl mx-auto bg-slate-900/80 rounded-3xl border border-slate-800 p-6 sm:p-10 shadow-2xl backdrop-blur-md">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <!-- Visual Preview Box (Left) -->
+          <div class="lg:col-span-7">
+            <div id="swatchPreviewBox" class="relative rounded-2xl h-80 sm:h-96 transition-all duration-500 overflow-hidden shadow-inner flex flex-col justify-end p-6 border border-white/10" style="background-color: #27384E;">
+              
+              <!-- Subtle room overlay simulation -->
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-white/10 pointer-events-none"></div>
+              
+              <!-- Dynamic Info Overlay -->
+              <div class="relative z-10 bg-black/60 backdrop-blur-md p-4 rounded-xl border border-white/15 max-w-sm">
+                <div class="flex items-center justify-between mb-1">
+                  <span id="activeColorCode" class="text-xs font-bold text-amber-400 tracking-wider">HC-154</span>
+                  <span id="activeColorBrand" class="text-[11px] text-slate-300 uppercase">Benjamin Moore Historical</span>
+                </div>
+                <h4 id="activeColorName" class="font-serif text-xl font-bold text-white">Hale Navy</h4>
+                <p id="activeColorDesc" class="text-xs text-slate-300 mt-1">A timeless, deeply saturated navy with subtle charcoal undertones that evokes architectural drama.</p>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Swatch Selection Buttons (Right) -->
+          <div class="lg:col-span-5 space-y-4">
+            <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400">Select Curated Designer Swatch</h4>
+            
+            <div class="space-y-2.5">
+              
+              <!-- Swatch 1: Hale Navy -->
+              <button onclick="selectSwatch('#27384E', 'HC-154', 'Benjamin Moore Historical', 'Hale Navy', 'A timeless, deeply saturated navy with subtle charcoal undertones that evokes architectural drama.', this)" class="swatch-btn w-full p-3.5 rounded-xl border-2 border-amber-400 bg-slate-800 flex items-center justify-between text-left transition-all">
+                <div class="flex items-center gap-3">
+                  <span class="w-8 h-8 rounded-lg shadow-sm border border-white/20" style="background-color: #27384E;"></span>
+                  <div>
+                    <div class="font-bold text-sm text-white">Hale Navy</div>
+                    <div class="text-[11px] text-slate-400">BM HC-154 • Ultra-Rich Velvet</div>
+                  </div>
+                </div>
+                <span class="text-xs text-amber-400 font-semibold">Active</span>
+              </button>
+
+              <!-- Swatch 2: Chantilly Lace -->
+              <button onclick="selectSwatch('#F7F6F2', 'OC-65', 'Benjamin Moore Off-White', 'Chantilly Lace', 'A crisp, pure white with no blue or yellow undertones. Ideal for highlighting natural light and modern trim.', this)" class="swatch-btn w-full p-3.5 rounded-xl border border-slate-700 hover:border-slate-500 bg-slate-850 flex items-center justify-between text-left transition-all">
+                <div class="flex items-center gap-3">
+                  <span class="w-8 h-8 rounded-lg shadow-sm border border-white/20" style="background-color: #F7F6F2;"></span>
+                  <div>
+                    <div class="font-bold text-sm text-white">Chantilly Lace</div>
+                    <div class="text-[11px] text-slate-400">BM OC-65 • Pure Gallery White</div>
+                  </div>
+                </div>
+                <i data-lucide="chevron-right" class="w-4 h-4 text-slate-500"></i>
+              </button>
+
+              <!-- Swatch 3: French Olive / Bancha -->
+              <button onclick="selectSwatch('#3F4A3C', 'No. 298', 'Farrow & Ball Estate', 'Bancha Olive', 'A grounded mid-century olive green that brings organic tranquility to libraries, pantries, and studies.', this)" class="swatch-btn w-full p-3.5 rounded-xl border border-slate-700 hover:border-slate-500 bg-slate-850 flex items-center justify-between text-left transition-all">
+                <div class="flex items-center gap-3">
+                  <span class="w-8 h-8 rounded-lg shadow-sm border border-white/20" style="background-color: #3F4A3C;"></span>
+                  <div>
+                    <div class="font-bold text-sm text-white">Bancha Olive</div>
+                    <div class="text-[11px] text-slate-400">F&B No. 298 • Botanical Mineral</div>
+                  </div>
+                </div>
+                <i data-lucide="chevron-right" class="w-4 h-4 text-slate-500"></i>
+              </button>
+
+              <!-- Swatch 4: Kendall Charcoal -->
+              <button onclick="selectSwatch('#464746', 'HC-166', 'Benjamin Moore Historical', 'Kendall Charcoal', 'A versatile, luxurious deep neutral with warm stone undertones suited for moody dining rooms and cabinets.', this)" class="swatch-btn w-full p-3.5 rounded-xl border border-slate-700 hover:border-slate-500 bg-slate-850 flex items-center justify-between text-left transition-all">
+                <div class="flex items-center gap-3">
+                  <span class="w-8 h-8 rounded-lg shadow-sm border border-white/20" style="background-color: #464746;"></span>
+                  <div>
+                    <div class="font-bold text-sm text-white">Kendall Charcoal</div>
+                    <div class="text-[11px] text-slate-400">BM HC-166 • Modern Slate</div>
+                  </div>
+                </div>
+                <i data-lucide="chevron-right" class="w-4 h-4 text-slate-500"></i>
+              </button>
+
+            </div>
+
+            <div class="pt-2 text-[11px] text-slate-400 flex items-center gap-2">
+              <i data-lucide="info" class="w-3.5 h-3.5 text-amber-400"></i>
+              <span>Every client receives 3 full-size on-wall brushout samples during our laser consultation.</span>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== INSTANT PROJECT COST CALCULATOR ==================== -->
+  <section id="calculator" class="py-24 bg-[#F2EFE9] border-y border-slate-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-950 text-amber-400 text-xs font-bold tracking-wider uppercase">
+          <i data-lucide="calculator" class="w-3.5 h-3.5"></i> Laser-Accurate Estimates
+        </span>
+        <h2 class="font-serif text-4xl sm:text-5xl font-bold text-slate-950">
+          Calculate your finishing investment.
+        </h2>
+        <p class="text-slate-600 text-lg font-light">
+          No vague guesswork. Adjust the square footage and scope below to see an immediate projection backed by our fixed-price pledge.
+        </p>
+      </div>
+
+      <div class="max-w-5xl mx-auto bg-white rounded-3xl shadow-xl border border-slate-200 p-8 sm:p-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+          
+          <!-- Controls (Left) -->
+          <div class="lg:col-span-7 space-y-8">
+            
+            <!-- Scope Type -->
+            <div>
+              <label class="block text-sm font-bold uppercase tracking-wider text-slate-500 mb-3">
+                1. Project Category
+              </label>
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                <button type="button" onclick="setProjectCategory('interior', 3.8, this)" class="cat-btn px-3 py-3 rounded-xl border-2 border-slate-950 bg-slate-100 text-slate-950 font-semibold text-center text-sm transition-all">
+                  Full Interior
+                </button>
+                <button type="button" onclick="setProjectCategory('cabinets', 5.2, this)" class="cat-btn px-3 py-3 rounded-xl border border-slate-200 bg-white text-slate-700 font-medium text-center text-sm transition-all hover:border-slate-400">
+                  Cabinet Lacquering
+                </button>
+                <button type="button" onclick="setProjectCategory('exterior', 4.5, this)" class="cat-btn px-3 py-3 rounded-xl border border-slate-200 bg-white text-slate-700 font-medium text-center text-sm transition-all hover:border-slate-400">
+                  Full Exterior
+                </button>
+              </div>
+            </div>
+
+            <!-- Square Footage Range Slider -->
+            <div>
+              <div class="flex justify-between items-center mb-3">
+                <label class="text-sm font-bold uppercase tracking-wider text-slate-500">
+                  2. Approximate Finished Area
+                </label>
+                <span id="sqftDisplay" class="font-serif text-xl font-bold text-slate-950">2,400 sq. ft.</span>
+              </div>
+              <input id="sqftSlider" type="range" min="600" max="6500" step="100" value="2400" oninput="updateSqft(this.value)" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer">
+              <div class="flex justify-between text-[11px] text-slate-400 mt-2">
+                <span>600 sq ft (Apartment/Condo)</span>
+                <span>3,500 sq ft</span>
+                <span>6,500+ sq ft (Grand Estate)</span>
+              </div>
+            </div>
+
+            <!-- Paint Formulation Tier -->
+            <div>
+              <label class="block text-sm font-bold uppercase tracking-wider text-slate-500 mb-3">
+                3. Formulation Grade
+              </label>
+              <div class="space-y-2">
+                <label class="flex items-center justify-between p-3.5 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer">
+                  <div class="flex items-center gap-3">
+                    <input type="radio" name="paintGrade" value="1.0" checked onchange="updateGrade(1.0)" class="w-4 h-4 text-slate-950 focus:ring-slate-800">
+                    <div>
+                      <div class="font-semibold text-sm text-slate-900">Benjamin Moore Regal Select / Aura®</div>
+                      <div class="text-xs text-slate-500">Scuff-X durability, zero-VOC, rich matte & eggshell</div>
+                    </div>
+                  </div>
+                  <span class="text-xs font-bold text-slate-600">Standard</span>
+                </label>
+
+                <label class="flex items-center justify-between p-3.5 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer">
+                  <div class="flex items-center gap-3">
+                    <input type="radio" name="paintGrade" value="1.25" onchange="updateGrade(1.25)" class="w-4 h-4 text-slate-950 focus:ring-slate-800">
+                    <div>
+                      <div class="font-semibold text-sm text-slate-900">Farrow & Ball Estate Emulsion / Modern Eggshell</div>
+                      <div class="text-xs text-slate-500">Unmatched chalky pigment density, handcrafted in Dorset</div>
+                    </div>
+                  </div>
+                  <span class="text-xs font-bold text-amber-700">+25%</span>
+                </label>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Output Display (Right) -->
+          <div class="lg:col-span-5 bg-obsidian-950 text-white rounded-2xl p-6 sm:p-8 flex flex-col justify-between border border-slate-800">
+            <div>
+              <div class="flex items-center justify-between border-b border-slate-800 pb-4 mb-6">
+                <span class="text-xs uppercase tracking-widest text-amber-400 font-bold">Estimated Investment</span>
+                <span class="text-xs text-slate-400">Zero Dust Guaranteed</span>
+              </div>
+
+              <!-- Price Box -->
+              <div class="space-y-1">
+                <div class="text-slate-400 text-xs">Fixed-Price Ballpark Projection:</div>
+                <div id="calcPriceDisplay" class="font-serif text-4xl sm:text-5xl font-bold text-amber-300">
+                  $8,800 – $10,500
+                </div>
+                <div class="text-[11px] text-slate-400 mt-1">Includes 100% floor/furniture masking, laser prep, 2 coats & cleanup.</div>
+              </div>
+
+              <!-- Metrics -->
+              <div class="grid grid-cols-2 gap-4 mt-8 pt-6 border-t border-slate-800">
+                <div>
+                  <div class="text-xs text-slate-400">Turnaround Timeline:</div>
+                  <div id="calcDaysDisplay" class="text-lg font-bold text-white mt-0.5">4 – 5 Days</div>
+                </div>
+                <div>
+                  <div class="text-xs text-slate-400">Dust Migration:</div>
+                  <div class="text-lg font-bold text-emerald-400 mt-0.5">0.0% (HEPA)</div>
+                </div>
+              </div>
+
+              <div class="mt-6 p-3 rounded-xl bg-slate-900 border border-slate-800 text-xs text-slate-300 flex items-start gap-2.5">
+                <i data-lucide="shield-check" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>
+                <span>Backed by our 10-Year Anti-Peeling Written Warranty and zero-mess guarantee.</span>
+              </div>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="mt-8">
+              <button onclick="openBookingModal()" class="w-full py-4 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-sm tracking-wide uppercase transition-all shadow-lg flex items-center justify-center gap-2">
+                <span>Book Precision Laser Measure</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </button>
+              <div class="text-center text-[11px] text-slate-400 mt-2">Guaranteed binding quote provided within 4 hours of walk</div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== THE ZERO-DUST STANDARD COMPARISON ==================== -->
+  <section id="zero-dust" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+        <span class="text-xs uppercase tracking-[0.25em] text-amber-700 font-bold">Health & Hygiene</span>
+        <h2 class="font-serif text-4xl sm:text-5xl font-bold text-slate-950">Why ordinary painting fails homes.</h2>
+        <p class="text-slate-600 font-light">
+          We protect your family's lungs, your electronics, and your furniture with clinical containment barriers.
+        </p>
+      </div>
+
+      <div class="max-w-4xl mx-auto border border-slate-200 rounded-3xl overflow-hidden shadow-sm">
+        <div class="grid grid-cols-2 text-sm font-bold bg-slate-950 text-white p-5">
+          <div class="text-slate-400">Standard Painting Contractors</div>
+          <div class="text-amber-400 flex items-center gap-2">
+            <i data-lucide="shield" class="w-4 h-4"></i> Lumina Architectural 5-Stage Standard
+          </div>
+        </div>
+
+        <div class="divide-y divide-slate-100 bg-[#FAF9F5] text-xs sm:text-sm">
+          <div class="grid grid-cols-2 p-5 items-center">
+            <div class="text-slate-500 pr-4">Thin drop cloths that allow paint bleed onto hardwood.</div>
+            <div class="font-semibold text-slate-900 flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+              Triple-layer RamBoard + sealed neoprene barrier.
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 p-5 items-center">
+            <div class="text-slate-500 pr-4">Dry sanding fills HVAC ducts and electronics with chalk dust.</div>
+            <div class="font-semibold text-slate-900 flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+              Festool HEPA-vacuum sanders capturing 99.97% of particulates.
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 p-5 items-center">
+            <div class="text-slate-500 pr-4">Toxic smelling VOC fumes lingering for weeks.</div>
+            <div class="font-semibold text-slate-900 flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+              Exclusively Zero-VOC formulations safe for children and pets.
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 p-5 items-center">
+            <div class="text-slate-500 pr-4">1-year verbal warranty with difficult claim callbacks.</div>
+            <div class="font-semibold text-slate-900 flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+              10-Year Written Anti-Peel & Color-Fast Bond Warranty.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SELECTED CASE STUDIES ==================== -->
+  <section id="portfolio" class="py-24 bg-[#FBF9F5] border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <div>
+          <span class="text-xs uppercase tracking-[0.25em] text-amber-700 font-bold block mb-2">Architectural Proof</span>
+          <h2 class="font-serif text-4xl sm:text-5xl font-bold text-slate-950">Recent Transformations.</h2>
+        </div>
+        <p class="text-slate-500 text-base max-w-md font-light">
+          Inspected under 2,000-lumen raking inspection lights to guarantee zero flaws.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        
+        <!-- Case 1 -->
+        <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 hover:shadow-xl transition-all group">
+          <div class="h-72 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80" alt="Kitchen Cabinets" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-slate-900">Atherton Kitchen</span>
+          </div>
+          <div class="p-8 space-y-4">
+            <div class="flex items-center justify-between text-xs text-slate-500 font-semibold uppercase tracking-wider">
+              <span>Cabinet Lacquering</span>
+              <span class="text-amber-700">Saved $48,000 vs New</span>
+            </div>
+            <h3 class="font-serif text-2xl font-bold text-slate-900">1990s Honey Oak to Satin Hague Blue</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Full chemical degreasing, epoxy grain filling, and 4-coat catalyzed lacquer spray with brushed champagne brass pulls.
+            </p>
+            <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-900">
+              <span>Timeline: 5 Days</span>
+              <span>Finish: 20-Degree Velvet Sheen</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 2 -->
+        <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 hover:shadow-xl transition-all group">
+          <div class="h-72 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80" alt="Interior Living Room" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-slate-900">Presidio Heights</span>
+          </div>
+          <div class="p-8 space-y-4">
+            <div class="flex items-center justify-between text-xs text-slate-500 font-semibold uppercase tracking-wider">
+              <span>Full Interior</span>
+              <span class="text-emerald-700">Level 5 Museum Smooth</span>
+            </div>
+            <h3 class="font-serif text-2xl font-bold text-slate-900">Edwardian Residence Modern Revival</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Restored historical lath-and-plaster, skim-coated all ceilings, and applied Farrow & Ball School House White throughout.
+            </p>
+            <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-900">
+              <span>Timeline: 8 Days</span>
+              <span>Rooms: 9 Total</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 3 -->
+        <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 hover:shadow-xl transition-all group">
+          <div class="h-72 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" alt="Exterior Residence" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-slate-900">Mill Valley</span>
+          </div>
+          <div class="p-8 space-y-4">
+            <div class="flex items-center justify-between text-xs text-slate-500 font-semibold uppercase tracking-wider">
+              <span>Exterior Coating</span>
+              <span class="text-amber-700">Marine-Grade Seal</span>
+            </div>
+            <h3 class="font-serif text-2xl font-bold text-slate-900">Redwood Modernist Hillside Facade</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Applied breathable penetrative UV ceramic stain to weathered vertical cedar siding with jet-black powder-coated window surrounds.
+            </p>
+            <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-slate-900">
+              <span>Warranty: 12 Years</span>
+              <span>Substrate: 100% Moisture Tested</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FAQ ACCORDION ==================== -->
+  <section id="faq" class="py-24 bg-white border-t border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 space-y-3">
+        <span class="text-xs uppercase tracking-[0.25em] text-amber-700 font-bold">Uncompromising Details</span>
+        <h2 class="font-serif text-4xl font-bold text-slate-950">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="space-y-4">
+        
+        <div class="faq-item bg-[#FBF9F5] rounded-2xl border border-slate-200 overflow-hidden">
+          <button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-slate-50 transition-colors">
+            <span>Will there be chemical paint odors or dust throughout our home?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-6 text-slate-600 text-sm leading-relaxed border-t border-slate-200/60 pt-4">
+            No. We utilize heavy-duty ZipWall magnetic airlocks, negative pressure air scrubbers, and Festool HEPA dust extractors that capture 99.97% of sanding particles. Additionally, 100% of the interior wall paints we specify are certified Zero-VOC.
+          </div>
+        </div>
+
+        <div class="faq-item bg-[#FBF9F5] rounded-2xl border border-slate-200 overflow-hidden">
+          <button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-slate-50 transition-colors">
+            <span>How durable is your cabinet paint finish compared to factory new cabinets?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-6 text-slate-600 text-sm leading-relaxed border-t border-slate-200/60 pt-4">
+            Our spray process produces equal or superior durability to showroom cabinets. We spray post-catalyzed industrial conversion coatings that chemically bond with the wood grain. The surface cures into a rock-hard enamel that resists hot pots, coffee spills, and heavy impacts.
+          </div>
+        </div>
+
+        <div class="faq-item bg-[#FBF9F5] rounded-2xl border border-slate-200 overflow-hidden">
+          <button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-slate-50 transition-colors">
+            <span>Do we need to move our own heavy furniture and take down wall art?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-6 text-slate-600 text-sm leading-relaxed border-t border-slate-200/60 pt-4">
+            No. Our white-glove team moves all furniture to the room center, wraps every piece in clean breathable plastic, and returns everything to its millimeter-exact position upon completion.
+          </div>
+        </div>
+
+        <div class="faq-item bg-[#FBF9F5] rounded-2xl border border-slate-200 overflow-hidden">
+          <button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left font-bold text-slate-900 flex justify-between items-center hover:bg-slate-50 transition-colors">
+            <span>What does your 10-Year Warranty cover?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-6 text-slate-600 text-sm leading-relaxed border-t border-slate-200/60 pt-4">
+            Our written warranty protects against chipping, peeling, bubbling, and blistering under normal living conditions. If an applied finish ever loses adhesion due to workmanship or material defect, we repair it free of charge.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== LEAD CAPTURE CTA BANNER ==================== -->
+  <section class="py-24 bg-obsidian-950 text-white text-center relative overflow-hidden">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+      <span class="inline-block px-3.5 py-1 rounded-full bg-slate-900 border border-slate-800 text-amber-400 text-xs font-semibold uppercase tracking-widest">
+        Complimentary Laser Estimate
+      </span>
+      <h2 class="font-serif text-4xl sm:text-6xl font-bold leading-tight">
+        Elevate your home’s surfaces today.
+      </h2>
+      <p class="text-slate-300 text-lg max-w-xl mx-auto font-light">
+        Schedule our senior estimator to visit your property with precision laser measurement tools and full-size designer color swatches.
+      </p>
+
+      <div class="pt-4 flex flex-col sm:flex-row justify-center gap-4">
+        <button onclick="openBookingModal()" class="px-8 py-4 rounded-full bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-base transition-all shadow-xl flex items-center justify-center gap-2">
+          <span>Book Free Laser Consultation</span>
+          <i data-lucide="calendar" class="w-5 h-5"></i>
+        </button>
+        <a href="tel:4157993320" class="px-8 py-4 rounded-full bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 font-medium text-base transition-all flex items-center justify-center gap-2">
+          <i data-lucide="phone" class="w-5 h-5 text-amber-400"></i>
+          <span>Direct: (415) 799-3320</span>
+        </a>
+      </div>
+      <p class="text-xs text-slate-500 pt-2">Licensed C-33 Painting Contractor #1048201 • $2,000,000 Liability Insurance</p>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-slate-950 text-slate-400 text-sm py-16 border-t border-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-12">
+      <div class="space-y-4">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-lg bg-slate-900 flex items-center justify-center text-amber-400">
+            <i data-lucide="paint-roller" class="w-4 h-4"></i>
+          </div>
+          <span class="font-serif text-xl tracking-wider font-bold text-white">LUMINA FINISHERS</span>
+        </div>
+        <p class="text-xs text-slate-400 leading-relaxed">
+          Architectural coatings, factory-smooth cabinet conversions, and museum-grade Level 5 interior wall finishes.
+        </p>
+        <div class="text-xs text-slate-500">
+          Studio: 180 Montgomery St, Suite 1200<br>San Francisco, CA 94104
+        </div>
+      </div>
+
+      <div>
+        <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Coatings</h4>
+        <ul class="space-y-2.5 text-xs">
+          <li><a href="#services" class="hover:text-white transition-colors">Cabinet Spray Lacquering</a></li>
+          <li><a href="#services" class="hover:text-white transition-colors">Museum Level 5 Skim Coating</a></li>
+          <li><a href="#services" class="hover:text-white transition-colors">Architectural Facades</a></li>
+          <li><a href="#services" class="hover:text-white transition-colors">Venetian Plaster & Limewash</a></li>
+          <li><a href="#services" class="hover:text-white transition-colors">Fine Woodwork & Trim</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-4">Navigation</h4>
+        <ul class="space-y-2.5 text-xs">
+          <li><a href="#visualizer" class="hover:text-white transition-colors">Swatch Visualizer</a></li>
+          <li><a href="#calculator" class="hover:text-white transition-colors">Instant Project Calculator</a></li>
+          <li><a href="#zero-dust" class="hover:text-white transition-colors">Zero-Dust Standard</a></li>
+          <li><a href="#portfolio" class="hover:text-white transition-colors">Selected Case Studies</a></li>
+          <li><a href="#faq" class="hover:text-white transition-colors">Contractor FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="space-y-4">
+        <h4 class="text-xs font-bold uppercase tracking-wider text-white">Contact Estimating</h4>
+        <p class="text-xs text-slate-400">Speak directly with our field manager:</p>
+        <div class="space-y-1 text-xs">
+          <div class="text-white font-medium">estimating@luminafinishers.com</div>
+          <div class="text-amber-400 font-bold">(415) 799-3320</div>
+        </div>
+        <div class="pt-2 flex gap-4 text-slate-400">
+          <span class="hover:text-white cursor-pointer"><i data-lucide="instagram" class="w-4 h-4"></i></span>
+          <span class="hover:text-white cursor-pointer"><i data-lucide="linkedin" class="w-4 h-4"></i></span>
+          <span class="hover:text-white cursor-pointer"><i data-lucide="facebook" class="w-4 h-4"></i></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-slate-900 text-xs text-slate-500 flex flex-col sm:flex-row justify-between items-center gap-4">
+      <div>&copy; 2026 Lumina Finishers Inc. All rights reserved.</div>
+      <div class="flex gap-6">
+        <a href="#" class="hover:text-slate-400">Privacy Policy</a>
+        <a href="#" class="hover:text-slate-400">10-Year Warranty Terms</a>
+        <a href="#" class="hover:text-slate-400">CSLB Lic #1048201</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== BOOKING MODAL ==================== -->
+  <div id="bookingModal" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-lg w-full p-8 shadow-2xl border border-slate-200 relative overflow-hidden">
+      <button onclick="closeBookingModal()" class="absolute top-6 right-6 text-slate-400 hover:text-slate-700">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+
+      <div class="space-y-2 mb-6">
+        <span class="text-xs uppercase tracking-wider font-bold text-amber-700">Zero-Obligation Estimate</span>
+        <h3 class="font-serif text-2xl font-bold text-slate-900">Book Laser On-Site Measure</h3>
+        <p class="text-xs text-slate-500">We will measure square footage with laser precision and provide 3 physical color swatches.</p>
+      </div>
+
+      <form onsubmit="handleFormSubmit(event)" class="space-y-4">
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">Your Full Name</label>
+          <input type="text" required placeholder="e.g. Rachel & David Vance" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-slate-950 focus:outline-none">
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">Email Address</label>
+            <input type="email" required placeholder="name@domain.com" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-slate-950 focus:outline-none">
+          </div>
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">Phone</label>
+            <input type="tel" required placeholder="(415) 000-0000" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-slate-950 focus:outline-none">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">Primary Scope</label>
+          <select class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-slate-950 focus:outline-none bg-white">
+            <option>Full Home Interior Painting</option>
+            <option>Kitchen Cabinet Spray Lacquering</option>
+            <option>Exterior Facade & Trim Restoration</option>
+            <option>Museum Level 5 Skim / Venetian Plaster</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">Property City / Zip Code</label>
+          <input type="text" required placeholder="e.g. San Francisco, 94115" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-slate-950 focus:outline-none">
+        </div>
+
+        <button type="submit" class="w-full py-4 rounded-xl bg-slate-950 hover:bg-slate-800 text-white font-bold text-sm tracking-wider uppercase transition-all shadow-lg flex items-center justify-center gap-2 mt-4">
+          <span>Confirm Laser Estimate Walk</span>
+          <i data-lucide="check-circle" class="w-4 h-4 text-amber-400"></i>
+        </button>
+      </form>
+
+      <!-- Confirmation Toast -->
+      <div id="formSuccessToast" class="hidden absolute inset-0 bg-white p-8 flex flex-col items-center justify-center text-center space-y-4">
+        <div class="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center">
+          <i data-lucide="check" class="w-8 h-8"></i>
+        </div>
+        <h4 class="font-serif text-2xl font-bold text-slate-900">Estimate Walk Requested</h4>
+        <p class="text-slate-600 text-sm max-w-sm">
+          Thank you. Our senior field technician will call within 2 hours to confirm your laser measurement appointment.
+        </p>
+        <button onclick="closeBookingModal()" class="px-6 py-2.5 bg-slate-950 text-white rounded-xl text-sm font-medium">Close Window</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==================== JAVASCRIPT ==================== -->
+  <script>
+    lucide.createIcons();
+
+    // Mobile Menu
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    function toggleMobileMenu() {
+      mobileMenu.classList.toggle('hidden');
+    }
+    mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+
+    document.querySelectorAll('.mobile-link').forEach(l => {
+      l.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+    });
+
+    // Swatch Visualizer
+    function selectSwatch(hex, code, brand, name, desc, btn) {
+      document.getElementById('swatchPreviewBox').style.backgroundColor = hex;
+      document.getElementById('activeColorCode').textContent = code;
+      document.getElementById('activeColorBrand').textContent = brand;
+      document.getElementById('activeColorName').textContent = name;
+      document.getElementById('activeColorDesc').textContent = desc;
+
+      document.querySelectorAll('.swatch-btn').forEach(b => {
+        b.classList.remove('border-2', 'border-amber-400');
+        b.classList.add('border', 'border-slate-700');
+        const activeText = b.querySelector('.text-amber-400');
+        if (activeText && activeText.tagName === 'SPAN') {
+          activeText.remove();
+        }
+      });
+
+      btn.classList.add('border-2', 'border-amber-400');
+      btn.classList.remove('border-slate-700');
+    }
+
+    // Instant Cost Calculator
+    let currentCategoryRate = 3.8;
+    let currentSqft = 2400;
+    let currentGradeMult = 1.0;
+
+    function setProjectCategory(type, rate, btn) {
+      currentCategoryRate = rate;
+      document.querySelectorAll('.cat-btn').forEach(b => {
+        b.classList.remove('border-2', 'border-slate-950', 'bg-slate-100', 'text-slate-950');
+        b.classList.add('border', 'border-slate-200', 'bg-white', 'text-slate-700');
+      });
+      btn.classList.add('border-2', 'border-slate-950', 'bg-slate-100', 'text-slate-950');
+      btn.classList.remove('border-slate-200', 'bg-white', 'text-slate-700');
+      calculateCost();
+    }
+
+    function updateSqft(val) {
+      currentSqft = parseInt(val);
+      document.getElementById('sqftDisplay').textContent = `${currentSqft.toLocaleString()} sq. ft.`;
+      calculateCost();
+    }
+
+    function updateGrade(val) {
+      currentGradeMult = parseFloat(val);
+      calculateCost();
+    }
+
+    function calculateCost() {
+      const base = currentSqft * currentCategoryRate * currentGradeMult;
+      const low = Math.round((base * 0.95) / 100) * 100;
+      const high = Math.round((base * 1.15) / 100) * 100;
+
+      document.getElementById('calcPriceDisplay').textContent = `$${low.toLocaleString()} – $${high.toLocaleString()}`;
+
+      const daysEl = document.getElementById('calcDaysDisplay');
+      if (currentSqft > 4000) {
+        daysEl.textContent = "7 – 10 Days";
+      } else if (currentSqft > 2000) {
+        daysEl.textContent = "4 – 6 Days";
+      } else {
+        daysEl.textContent = "2 – 3 Days";
+      }
+    }
+
+    // FAQ Accordion
+    function toggleFaq(button) {
+      const content = button.nextElementSibling;
+      const icon = button.querySelector('i');
+      const isOpen = !content.classList.contains('hidden');
+
+      document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+      document.querySelectorAll('.faq-item i').forEach(i => i.style.transform = 'rotate(0deg)');
+
+      if (!isOpen) {
+        content.classList.remove('hidden');
+        icon.style.transform = 'rotate(180deg)';
+      }
+    }
+
+    // Modal
+    const bookingModal = document.getElementById('bookingModal');
+    function openBookingModal() {
+      bookingModal.classList.remove('hidden');
+      bookingModal.classList.add('flex');
+    }
+    function closeBookingModal() {
+      bookingModal.classList.add('hidden');
+      bookingModal.classList.remove('flex');
+      document.getElementById('formSuccessToast').classList.add('hidden');
+    }
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      document.getElementById('formSuccessToast').classList.remove('hidden');
+      setTimeout(() => lucide.createIcons(), 50);
+    }
+  </script>
+</body>
+</html>
